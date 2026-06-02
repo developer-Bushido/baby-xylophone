@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby Xylophone — a calm, ad-free music app for toddlers</title>
+<meta name="description" content="Baby Xylophone is a gentle, ad-free musical toy for toddlers (ages 1–4). Real instrument sounds, no ads, no tracking. By Bushido Code AI.">
+<link rel="icon" href="bunny_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#5a5f73; --ink-strong:#3a3550; --accent:#f8c79b; --accent-ink:#7a5a3a; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: "Fredoka", system-ui, sans-serif; color: var(--ink);
+    background: linear-gradient(180deg, #eaf4fb 0%, #fff7ee 100%);
+    min-height: 100vh; line-height: 1.5;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 24px 64px; }
+  header { display: flex; flex-wrap: wrap; align-items: center; gap: 32px; padding: 24px 0 8px; }
+  header img { width: 320px; max-width: 46vw; height: auto; }
+  .intro { flex: 1 1 320px; }
+  h1 { font-weight: 600; font-size: clamp(34px, 5vw, 52px); color: var(--ink-strong); margin: 0 0 6px; }
+  .tagline { font-size: clamp(18px, 2.4vw, 22px); margin: 0 0 18px; }
+  .promise {
+    display: inline-block; background: #fff; border-radius: 22px; padding: 14px 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06); font-size: 18px; color: var(--ink-strong);
+  }
+  .promise b { color: #2e7d32; }
+  section { margin-top: 40px; }
+  h2 { font-weight: 600; color: var(--ink-strong); font-size: 26px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 16px; }
+  .card { background:#fff; border-radius: 22px; padding: 20px 22px; box-shadow: 0 6px 18px rgba(0,0,0,.05); }
+  .card h3 { margin: 0 0 6px; font-weight: 600; color: var(--ink-strong); font-size: 19px; }
+  .card p { margin: 0; font-size: 16px; }
+  .badge {
+    display:inline-block; margin-top: 22px; background: var(--accent); color: var(--accent-ink);
+    border-radius: 28px; padding: 14px 28px; font-size: 20px; font-weight: 600;
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,.08); font-size: 15px; }
+  footer a { color: var(--accent-ink); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="bunny_hero.png" alt="A cute bunny playing a rainbow xylophone">
+      <div class="intro">
+        <h1>Baby Xylophone</h1>
+        <p class="tagline">A calm, gentle music toy for toddlers (ages 1–4).</p>
+        <p class="promise">You will see <b>no ads</b>. None. We're parents too —
+          we know how maddening that is.</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="cards">
+        <div class="card"><h3>🎵 Real instruments</h3><p>Xylophone, marimba, piano,
+          guitar, trumpet and violin — recorded, warm sounds with zero tap-to-sound delay.</p></div>
+        <div class="card"><h3>🎼 Learn little tunes</h3><p>A key gently glows and your
+          child follows it to play a song — no pressure, no scores, no failing.</p></div>
+        <div class="card"><h3>🔒 Made for little hands</h3><p>Settings and purchases sit
+          behind a parental gate. Nothing a toddler taps can buy anything or quit the app.</p></div>
+        <div class="card"><h3>🌍 Speaks your language</h3><p>Auto-detects the phone's
+          language; the playful screen stays almost text-free either way.</p></div>
+      </div>
+      <span class="badge">Coming soon to Google Play</span>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Bushido Code AI. Made with care for kids and their parents.</p>
+      <p>Contact: <a href="mailto:lexusrules@bushidocodeai.com">lexusrules@bushidocodeai.com</a>
+         &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
