@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become a tester — Baby Xylophone</title>
+<meta name="description" content="Join the closed test for Baby Xylophone, a calm ad-free music app for toddlers. Help us launch on Google Play.">
+<link rel="icon" href="bunny_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#5a5f73; --ink-strong:#3a3550; --accent:#f8c79b; --accent-ink:#7a5a3a; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: "Fredoka", system-ui, sans-serif; color: var(--ink);
+    background: linear-gradient(180deg, #eaf4fb 0%, #fff7ee 100%);
+    min-height: 100vh; line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 24px 64px; }
+  .back { display:inline-block; margin-bottom: 8px; color: var(--accent-ink); text-decoration: none; font-size: 15px; }
+  header { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 8px 0; }
+  header img { width: 160px; max-width: 38vw; height: auto; }
+  h1 { font-weight: 600; font-size: clamp(30px, 5vw, 44px); color: var(--ink-strong); margin: 0 0 6px; }
+  .tagline { font-size: clamp(17px, 2.4vw, 20px); margin: 0; }
+  .promise {
+    display: inline-block; background: #fff; border-radius: 18px; padding: 12px 20px; margin-top: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06); font-size: 16px; color: var(--ink-strong);
+  }
+  .promise b { color: #2e7d32; }
+  section { margin-top: 36px; }
+  h2 { font-weight: 600; color: var(--ink-strong); font-size: 24px; margin: 0 0 4px; }
+  .steps { counter-reset: step; list-style: none; padding: 0; margin: 18px 0 0; }
+  .steps li {
+    background:#fff; border-radius: 18px; padding: 18px 20px 18px 64px; margin-bottom: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.05); position: relative; font-size: 16px;
+  }
+  .steps li::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; left: 18px; top: 16px; width: 32px; height: 32px;
+    background: var(--accent); color: var(--accent-ink); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 17px;
+  }
+  .steps li b { color: var(--ink-strong); }
+  .btn {
+    display:inline-block; margin: 6px 8px 6px 0; background: var(--accent); color: var(--accent-ink);
+    border-radius: 24px; padding: 12px 24px; font-size: 17px; font-weight: 600; text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  }
+  .btn.ghost { background:#fff; color: var(--accent-ink); }
+  .note { font-size: 14px; margin-top: 6px; color: var(--ink); }
+  code { background: #fff; padding: 2px 7px; border-radius: 8px; font-size: 14px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,.08); font-size: 15px; }
+  footer a { color: var(--accent-ink); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Baby Xylophone</a>
+    <header>
+      <img src="bunny_hero.png" alt="A cute bunny playing a rainbow xylophone">
+      <div>
+        <h1>Become a tester 🎵</h1>
+        <p class="tagline">Help us launch on Google Play — and I'll happily test your app back.</p>
+        <p class="promise">A <b>100% ad-free</b> music toy for toddlers. No ads, no tracking — ever.</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Join in two minutes</h2>
+      <ol class="steps">
+        <li><b>Join the testers group</b> with the Google account you use on your Android phone. This is what lets Google add you to the test.
+          <div><a class="btn" href="https://groups.google.com/a/bushidocodeai.com/g/babyxylophone-testers" target="_blank" rel="noopener">Join the testers group</a></div>
+        </li>
+        <li><b>Open the test opt-in page</b> on your phone and tap “Become a tester”.
+          <div><a class="btn ghost" href="https://play.google.com/apps/testing/com.bushidocodeai.babyxylophone" target="_blank" rel="noopener">Open opt-in page</a></div>
+          <p class="note">If it says you’re not a tester yet, give it a few minutes after joining the group, then reload.</p>
+        </li>
+        <li><b>Install from Google Play and keep it for 14 days.</b> Google requires testers to stay opted in for two weeks before an app can launch — that’s the whole ask. Open it now and then whenever your little one wants to play. 🐰</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Doing a tester exchange? 🤝</h2>
+      <p>I’m glad to reciprocate — send me your app’s test link and I’ll opt in right away and keep it the full 14 days.</p>
+      <a class="btn" href="mailto:lexusrules@bushidocodeai.com?subject=Tester%20exchange%20—%20Baby%20Xylophone">Email me your test link</a>
+      <p class="note">Trouble joining the group? Email me your Gmail and I’ll add you to the test directly.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Bushido Code AI. Made with care for kids and their parents.</p>
+      <p>Contact: <a href="mailto:lexusrules@bushidocodeai.com">lexusrules@bushidocodeai.com</a>
+         &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
